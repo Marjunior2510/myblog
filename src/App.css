@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  color: #455;
+  line-height: 1.5;
+  font-family: 'Josefin Sans', sans-serif;
+  background: rgb(255,255,255);
+  background: linear-gradient(21deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(235,252,255,1) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  /* padding: 5px; */
+  font-size: 10px;
+  /* text-align: center; */
+  color: white;
+  
+  background-color: white;
+  box-shadow: 0px 2px 4px #a4a4a4;
+}
+header div{
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#logo {
+  /* position: absolute; */
+  width: 200px;
+  
+  /* left: 1100px;
+  top: 22px; */
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+h2,.featuredImage {  
+    margin-bottom: 20px; 
+}
+
+li { margin-bottom: 10px;}
+
+
+
+.title {
+  font-size: 1em;
+  color:#080806;
+  font-weight: 800;
+ 
+}
+
+.post {
+  cursor: pointer;
+  padding: 10px;
+  margin: 25px;
+  background-color: #fff;
+  box-shadow: 0px 12px 40px rgba(182, 198, 255, 0.25);
+  border-radius: 10px;
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 15px;
+  /* box-shadow: 1px 5px 7px rgba(0,0,0,.13) ,1px 2px 2px rgba(0,0,0,.1) , -1px -2px 2px rgba(0,0,0,.05) ; */
+}
+
+.post img {
+      display: block;
+      width: 250px;
+      height: 150px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+}
+/* .post section {
+  outline: 1px blue solid;
+} */
+
+.postdate{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.date {
+  color:
+  #7b74ff;
+}
+
+.groupo {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #111D5C;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 700px) {
+ 
+.post {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 12px 40px rgba(182, 198, 255, 0.25);
+  border-radius: 10px;
+  width: 70%;
+
+  
+
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ 
+.post img {
+  width: 190px;
+  height: 110px;
+}
+
+.description{
+  margin-top: 10px;
+}
+#logo {
+ width: 150px;
+}
 }
